@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al-Ihsan Digital Academic Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">AI</div>
+      <div><strong>AL-IHSAN HIGH SCHOOL</strong><small>Digital Academic Portal</small></div>
+    </div>
+    <div class="top-actions">
+      <select class="role-select" id="roleSelect" aria-label="Switch demo role">
+        <option value="student">Student view</option>
+        <option value="teacher">Teacher view</option>
+      </select>
+      <div class="avatar" id="avatar">AS</div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="welcome">
+      <div>
+        <div class="eyebrow" id="roleLabel">Student workspace</div>
+        <h1 id="greeting">Good afternoon, Abu Aswad.</h1>
+        <p class="sub" id="welcomeText">Your learning space, organised in one place.</p>
+      </div>
+      <div class="date-pill">● &nbsp; DEMO PORTAL &nbsp; · &nbsp; 2026 / 2027 SESSION</div>
+    </section>
+
+    <nav class="tabs" aria-label="Portal sections">
+      <button class="tab active" data-tab="overview">Overview</button>
+      <button class="tab" data-tab="materials">Learning materials</button>
+      <button class="tab" data-tab="assignments">Assignments</button>
+      <button class="tab" data-tab="timetable">Timetable</button>
+      <button class="tab" data-tab="announcements">Announcements</button>
+    </nav>
+
+    <section id="content"></section>
+    <div class="footer">AL-IHSAN DIGITAL ACADEMIC PORTAL · PROTOTYPE PREVIEW · SAMPLE INFORMATION ONLY</div>
+  </main>
+</div>
+
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true">
+  <div class="modal">
+    <h3 id="modalTitle">Portal action</h3>
+    <p id="modalDescription">This is a demonstration interaction.</p>
+    <div id="modalFields"></div>
+    <div class="modal-actions">
+      <button class="action secondary" id="closeModal">Cancel</button>
+      <button class="action" id="saveModal">Submit demo</button>
+    </div>
+  </div>
+</div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
